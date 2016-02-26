@@ -1,15 +1,12 @@
 package com.android.boltt.activity;
 
-import java.util.Locale;
-
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -32,23 +29,17 @@ public class MainTabPage extends FragmentActivity {
 	private static final String TAB_3_TAG = "tab_3";
 	private static final String TAB_4_TAG = "tab_4";
 	private static final String TAB_5_TAG = "tab_5";
-	
 
-	private int selectedElement;
 	private FragmentTabHost mTabHost;
-	Configuration config;
-	Locale spanish;
-	TextView tv;
 
+	private TextView tv;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_tab_page);
 		InitView();
-		
 
-		
-		//mTabHost.setCurrentTab(2);
+
 		tv = (TextView) mTabHost.getCurrentTabView().findViewById(
 				R.id.txt_tabtxt); // selected Tabs
 		tv.setTextColor(Color.parseColor("#337ba6"));
@@ -59,15 +50,26 @@ public class MainTabPage extends FragmentActivity {
 			public void onTabChanged(String tabId) {
 				// TODO Auto-generated method stub
 
+				Log.d("","Which Tab: " +tabId);
 				for (int i = 0; i < mTabHost.getTabWidget().getChildCount(); i++) {
 					tv = (TextView) mTabHost.getTabWidget().getChildAt(i)
 							.findViewById(R.id.txt_tabtxt); // Unselected Tabs
 					tv.setTextColor(Color.parseColor("#919191"));
+					//mTabHost.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#8A4117"));
 				}
 
 				tv = (TextView) mTabHost.getCurrentTabView().findViewById(
 						R.id.txt_tabtxt); // selected Tabs
 				tv.setTextColor(Color.parseColor("#337ba6"));
+
+				//mTabHost.getTabWidget().getChildAt(mTabHost.getCurrentTab()).setBackgroundColor(Color.parseColor("#C35817"));
+/*
+				if(tabId.equals("tab_2"))
+				{
+
+					mPager.setAdapter(mEnergyAdapter);
+
+				}*/
 			}
 		});
 
@@ -82,6 +84,7 @@ public class MainTabPage extends FragmentActivity {
 
 	private void InitView() {
 		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
+
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.maintabcontent);
 
 		mTabHost.addTab(
@@ -107,6 +110,7 @@ public class MainTabPage extends FragmentActivity {
 				TabFive.class, null);
 
 		for (int i = 0; i < mTabHost.getTabWidget().getChildCount(); i++) {
+
 
 		}
 	}

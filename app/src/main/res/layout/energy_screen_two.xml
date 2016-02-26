@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightGreen"
+    android:background="@color/cyn"
     android:orientation="vertical">
 
     <LinearLayout
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="20dp">
+            >
 
             <TextView
                 android:id="@+id/activeMinute"
@@ -88,6 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:background="@color/lightwhite"
             android:orientation="horizontal">
 
@@ -95,6 +97,7 @@
                 android:id="@+id/btn_back_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@null"
                 android:src="@drawable/ic_chevron_left" />
 
 
@@ -112,10 +115,17 @@
                 android:id="@+id/btn_forward_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@null"
                 android:src="@drawable/ic_chevron_right" />
         </LinearLayout>
 
     </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top"
+        >
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -176,6 +186,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+
                     android:src="@drawable/ic_place" />
 
                 <TextView
@@ -363,5 +374,5 @@
 
         </LinearLayout>
     </RelativeLayout>
-
+</ScrollView>
 </RelativeLayout>

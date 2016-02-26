@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">BOLTT</string>
 
-    <!-- TODO: Remove -sanjiv-- or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
 
-    
 
     <!-- Tab Name -->
     <string name="tab_contact">One</string>
@@ -25,5 +23,116 @@
     <string name="longestIdle">Longest Idle</string>
     <string name="workoutMinutes">Workout Minutes</string>
     <string name="afterBurn">After Burn</string>
+
+    <!--Screen 14.3 String define-->
+
+    <string name="sleep_burn">Sleep Burn</string>
+    <string name="active_burn">Active Burn</string>
+    <string name="idle_burn">Idle Burn</string>
+    <string name="m_communication_burn">Communication Burn</string>
+    <string name="m_conclusion_burn">Conclusion Burn</string>
+    <string name="b_digestive">Digestive Burn</string>
+    <string name="b_hydration">Hydration Burn</string>
+    <string name="b_other_fn_brn">Other Body Function Burn</string>
+
+    <!--  All String for band connection Line 30 to 126   -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+    <!-- Button name -->
+
+    <string name="btn_showpaircode">R Firmware</string>
+    <string name="btn_writenotice">W Notify</string>
+    <string name="btn_readMAC">R MAC</string>
+    <string name="btn_readVersion">R Version</string>
+    <string name="btn_writetime">W Time</string>
+    <string name="btn_writeinfo">W Info</string>
+    <string name="btn_readtime">R Time</string>
+    <string name="btn_readinfo">R Info</string>
+    <string name="btn_writealarmclock">W AlarmClock</string>
+    <string name="btn_readalarmclock">R AlarmClock</string>
+    <string name="btn_readbattery">R Battery</string>
+    <string name="btn_readCurrentSportData">R Now Steps</string>
+    <string name="btn_readHistorySportData">R HistoryData</string>
+    <string name="btn_readDateMapping">R Mapping</string>
+    <string name="btn_reset_Upgrade">Reset(upgrade)</string>
+    <string name="btn_reset">Dev reset</string>
+    <string name="btn_sendMsg">Notify</string>
+    <string name="btn_sendMsgData">NotifyData</string>
+    <string name="btn_cancelMsgData">Cancel SMS</string>
+    <string name="btn_Discharge">Discharge</string>
+    <string name="btn_DischargeOver">End discharge</string>
+    <string name="btn_Select_Upgrade_Data">Select file</string>
+    <string name="btn_ClearOutPut">Clear Text</string>
+    <string name="tip_file_not_exist">File not exist</string>
+    <string name="tip_file_length">File length</string>
+    <string name="tip_starttime">start time</string>
+    <string name="tip_endtime">end time</string>
+    <string name="More_Personal_Tip_File_Local">Choose file</string>
+    <string name="More_Personal_Tip_Img_Goto_Root">The root directory</string>
+    <string name="More_Personal_Tip_Img_Goto_Paranet">Parent directory</string>
+    <string name="More_Personal_Tip_Img_Is_Root">Is the root directory</string>
+    <string name="tip_alarmClock">ID:</string>
+    <string name="tip_alarmClock_Time">Time:</string>
+    <string name="btn_sure">Sure</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="tip_resetTypeTitle">Please select reset type</string>
+    <string name="tip_resetType1">1 normal reset system restart</string>
+    <string name="tip_resetType2">2 reply default parameters</string>
+    <string name="tip_resetType3">3 clear historical data</string>
+    <string name="tip_notifyType1">1 Incoming Call</string>
+    <string name="tip_notifyType2">2 Missed Call</string>
+    <string name="tip_notifyType3">3 Other</string>
+    <string name="tip_personalInfo">Info</string>
+    <string name="tip_personalType1">1 Height/Weight/Gender/Age</string>
+    <string name="tip_personalType2">2 Sedentary reminder</string>
+    <string name="tip_personalType3">3 Target number of steps</string>
+    <string name="tip_personalType4">4 Sleep Time</string>
+    <string name="tip_personalType5">5 Disconnect reminder/Time format/Time UI</string>
+    <string name="tip_personalType6">6 Do not disturb(time/switch)</string>
+    <string name="tip_personalType7">7 Language decoding</string>
+    <string name="tip_personalType8">8 Screen flip</string>
+    <string name="tip_personalType9">9 Auto bright screen</string>
+    <string name="tip_personalType91">Close 0</string>
+    <string name="tip_personalType92">Auto(Horizontal)3</string>
+    <string name="tip_personalType93">Auto(Portrait)1</string>
+    <string name="tip_personalInfo_Hight">Hight</string>
+    <string name="tip_personalInfo_weight">Weight</string>
+    <string name="tip_personalInfo_age">Age</string>
+    <string name="tip_personalInfo_sex">Gender</string>
+    <string name="tip_personalInfo_Time">Time</string>
+    <string name="tip_personalInfo_Disconnect_remind">Disconnect remind</string>
+    <string name="tip_personalInfo_Time_Format">Time Format</string>
+    <string name="tip_personalInfo_Display_Date">Display Date</string>
+    <string name="tip_personalInfo_Week_Language">Week language</string>
+    <string name="tip_personalInfo_UI_Type">UI Type</string>
+    <string name="tip_alarmClock_Enable">Enable</string>
+
+    <string name="tip_alarmClock_Type">Type</string>
+    <string name="tip_alarmClock_Week">Week</string>
+    <string name="tip_alarmClock_Type1">General</string>
+    <string name="tip_alarmClock_Type2">Important</string>
+
+    <!-- Tip term -->
+    <string name="tips_steps">Steps</string>
+    <string name="tips_distances">Distances</string>
+    <string name="tips_calories">Calories</string>
+
 
 </resources>
